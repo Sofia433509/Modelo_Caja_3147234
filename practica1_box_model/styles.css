@@ -4,39 +4,70 @@
     display block
     div la tiene por defecto
     -comportamiento por defecto:
-    ocupa todo el ancho de la pantalla
-    altura de pende del contenido
-    funciona si 
-    los elementos tienen contenido
-    o tiene tamaño definido
+        ocupa todo el ancho de la pantalla
+        altura de pende del contenido
+    -funciona si:
+        los elementos tienen contenido
+        o tiene tamaño definido
+
+    Margin:
+        Determina el espacio entre los elementos
+        solo aplica a elementos display block
+        computado de margenes
+        colapso de margenes
 
 */
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .box{
-    border-top: 2px solid gray;
-    border-right: 10px dotted brown;
-    border-bottom: 5px dashed black;
-    border-left: 5px groove rgb(255, 81, 0);
+    border-top: 2px solid blueviolet;
+    border-right: 10px dotted blueviolet;
+    border-bottom: 5px dashed blueviolet;
+    border-left: 5px groove blueviolet;
 
     border-color: blueviolet;
     border-style: solid;
     border-width: 5px;
 
-    border-top-color: antiquewhite;
+    border-top-color: blueviolet;
     border-top-style: groove;
     border-top-width: 10px;
 }
 
 .box1{
-    background-color: aqua;
+    /*margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: -200px;*/
+
+    margin: 20px 40px;
+    background-color: rgb(217, 135, 255);
     padding: 50px 45px 3px;
     display: block;
-    height: 100px;
+    height: 200px;
+    width: 300px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 20px;
 }
 
 .box2{
-    background-color: blue;
+    background-color: rgb(217, 135, 255);
     padding: 2px 4px 6px 8px;
     display: block;
     height: 200px;
+    width: 200px;
+    opacity: 0.5;
+    margin-top: 100px;
+    border-radius: 50%;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
 }
