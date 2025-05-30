@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    border: black solid 0px;
+    display: flex;
+    width: 400px;
+    height: 400px;
+    /* Shorthand para
+       flex-direction
+       flex-wrap */
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.flex-item{
+    /* height: 100px; */
+    width: 100px;
+}
+
+.fl1{
+    background-color: aqua;
+    flex-grow: 0.5;
+}
+
+.fl2{
+    background-color: blue;
+    flex-grow: 1;
+}
+
+.fl3{
+    background-color: blueviolet;
+    flex-grow: 2;
+}
+
+.fl4{
+    background-color: rgb(32, 32, 75);
+    flex-grow: 0.3;
+}
+
+.fl5{
+    background-color: rgb(73, 46, 99);
+    order: 7;
+    flex-grow: 1;
+}
